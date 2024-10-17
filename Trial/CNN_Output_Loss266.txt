@@ -1,0 +1,261 @@
+Is CUDA supported by this system? False
+Channel = 0.2-0.4_lem,Mean of channel = -0.108, std of channel = 0.403
+Range: -0.480 - 12.479
+0.2-0.4_lem
+Channel = 0.4-0.6_lem,Mean of channel = -0.060, std of channel = 0.471
+Range: -0.511 - 11.098
+0.4-0.6_lem
+Channel = 0.73-1.1_lem,Mean of channel = 0.040, std of channel = 0.580
+Range: -0.588 - 9.895
+0.73-1.1_lem
+Channel = 1.43-2.0_lem,Mean of channel = -0.213, std of channel = 0.297
+Range: -0.296 - 16.362
+1.43-2.0_lem
+Channel = Fe_XVII,Mean of channel = -0.203, std of channel = 0.242
+Range: -0.405 - 22.672
+Fe_XVII
+Channel = O_VII,Mean of channel = -0.224, std of channel = 0.221
+Range: -0.349 - 22.883
+O_VII
+Channel = O_VIII,Mean of channel = -0.220, std of channel = 0.216
+Range: -0.375 - 24.517
+O_VIII
+Channel = H1,Mean of channel = 19.015, std of channel = 0.178
+Range: -0.084 - 24.084
+H1
+['M500c', 'f_gas_R500c']
+[[1.4482e+01 1.4500e-01]
+ [1.4482e+01 1.4500e-01]
+ [1.4482e+01 1.4500e-01]
+ ...
+ [1.2889e+01 1.2000e-02]
+ [1.2889e+01 1.2000e-02]
+ [1.2889e+01 1.2000e-02]]
+Starting array =  [    0     1     2 ... 10428 10429 10430]
+Shuffled array =  [1812  391  477 ... 5460 3063 9436]
+training split looks like 8344 galaxies 
+testing split looks like 2087 galaxies
+Training indeces =  [ 1812   391   477 ...  8526 10372   625] 
+Testing indeces =  [3634 5810 8982 ... 5460 3063 9436]
+Shape of train = (8344,)
+Shape of test = (2087,)
+Shape of Data  (8, 10431, 128, 128)
+10431
+10431
+642_x
+8344
+1260_y
+2087
+128
+torch.Size([8, 128, 128])
+128
+epoch: 1/50; train loss: 7.055e-01; test loss: 1.336e-01
+epoch: 11/50; train loss: 2.058e-02; test loss: 9.348e-03
+epoch: 21/50; train loss: 1.121e-02; test loss: 1.399e-02
+epoch: 31/50; train loss: 8.621e-03; test loss: 7.431e-03
+epoch: 41/50; train loss: 7.482e-03; test loss: 8.077e-03
+broken = True
+epoch: 1/50; train loss: 1.967e+00; test loss: -1.409e+00
+epoch: 11/50; train loss: -4.271e+00; test loss: -4.341e+00
+epoch: 21/50; train loss: -4.804e+00; test loss: -4.666e+00
+epoch: 31/50; train loss: -5.462e+00; test loss: -5.176e+00
+epoch: 41/50; train loss: -4.445e+00; test loss: -4.443e+00
+broken = True
+Parameter:  M500c
+slope = 0.847,intercept = 1.988,r_value = 0.910,p_value = 0.000,std_err = 0.004,coefficient of correlation = 0.827
+scatter: 0.140 dex 
+Parameter:  f_gas_R500c
+slope = 0.911,intercept = 0.003,r_value = 0.976,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.953
+scatter: 0.006 dex 
+epoch: 1/50; train loss: 7.623e-01; test loss: 3.106e-01
+epoch: 11/50; train loss: 2.071e-02; test loss: 1.914e-02
+epoch: 21/50; train loss: 1.174e-02; test loss: 1.541e-02
+epoch: 31/50; train loss: 1.561e-02; test loss: 2.966e-02
+epoch: 41/50; train loss: 4.829e-03; test loss: 1.180e-02
+broken = True
+epoch: 1/50; train loss: -1.543e+00; test loss: -2.228e+00
+epoch: 11/50; train loss: -4.557e+00; test loss: -4.306e+00
+epoch: 21/50; train loss: -5.125e+00; test loss: -5.325e+00
+epoch: 31/50; train loss: -4.611e+00; test loss: -4.669e+00
+epoch: 41/50; train loss: -5.242e+00; test loss: -5.542e+00
+broken = True
+Parameter:  M500c
+slope = 1.099,intercept = -1.304,r_value = 0.990,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.981
+scatter: 0.061 dex 
+Parameter:  f_gas_R500c
+slope = 0.923,intercept = 0.002,r_value = 0.980,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.961
+scatter: 0.006 dex 
+epoch: 1/50; train loss: 8.096e-01; test loss: 3.098e-01
+epoch: 11/50; train loss: 3.201e-02; test loss: 1.328e-02
+epoch: 21/50; train loss: 1.624e-02; test loss: 7.869e-03
+epoch: 31/50; train loss: 1.165e-02; test loss: 6.832e-03
+epoch: 41/50; train loss: 1.022e-02; test loss: 1.026e-02
+broken = True
+epoch: 1/50; train loss: -2.004e+00; test loss: -3.095e+00
+epoch: 11/50; train loss: -4.661e+00; test loss: -4.406e+00
+epoch: 21/50; train loss: -5.527e+00; test loss: -5.733e+00
+epoch: 31/50; train loss: -5.691e+00; test loss: -5.429e+00
+epoch: 41/50; train loss: -5.285e+00; test loss: -5.159e+00
+broken = True
+Parameter:  M500c
+slope = 0.970,intercept = 0.398,r_value = 0.992,p_value = 0.000,std_err = 0.001,coefficient of correlation = 0.985
+scatter: 0.042 dex 
+Parameter:  f_gas_R500c
+slope = 1.009,intercept = -0.000,r_value = 0.987,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.975
+scatter: 0.005 dex 
+epoch: 1/50; train loss: 5.047e-01; test loss: 1.504e-01
+epoch: 11/50; train loss: 1.304e-02; test loss: 1.197e-02
+epoch: 21/50; train loss: 7.932e-03; test loss: 8.026e-03
+epoch: 31/50; train loss: 7.083e-03; test loss: 1.516e-02
+epoch: 41/50; train loss: 5.672e-03; test loss: 1.687e-02
+broken = True
+epoch: 1/50; train loss: -2.339e+00; test loss: -1.721e+00
+epoch: 11/50; train loss: -4.985e+00; test loss: -5.363e+00
+epoch: 21/50; train loss: -5.035e+00; test loss: -4.880e+00
+epoch: 31/50; train loss: -5.506e+00; test loss: -5.670e+00
+epoch: 41/50; train loss: -5.291e+00; test loss: -5.197e+00
+broken = True
+Parameter:  M500c
+slope = 0.976,intercept = 0.307,r_value = 0.993,p_value = 0.000,std_err = 0.001,coefficient of correlation = 0.986
+scatter: 0.040 dex 
+Parameter:  f_gas_R500c
+slope = 1.046,intercept = -0.002,r_value = 0.986,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.973
+scatter: 0.005 dex 
+epoch: 1/50; train loss: 4.887e-01; test loss: 2.173e-01
+epoch: 11/50; train loss: 1.873e-02; test loss: 7.807e-03
+epoch: 21/50; train loss: 8.926e-03; test loss: 5.653e-03
+epoch: 31/50; train loss: 6.147e-03; test loss: 7.787e-03
+epoch: 41/50; train loss: 5.026e-03; test loss: 1.146e-02
+broken = True
+epoch: 1/50; train loss: -8.512e-01; test loss: -2.424e+00
+epoch: 11/50; train loss: -4.153e+00; test loss: -4.535e+00
+epoch: 21/50; train loss: -4.740e+00; test loss: -5.246e+00
+epoch: 31/50; train loss: -5.165e+00; test loss: -5.440e+00
+epoch: 41/50; train loss: -5.693e+00; test loss: -4.767e+00
+broken = True
+Parameter:  M500c
+slope = 0.912,intercept = 1.160,r_value = 0.858,p_value = 0.000,std_err = 0.005,coefficient of correlation = 0.736
+scatter: 0.186 dex 
+Parameter:  f_gas_R500c
+slope = 0.909,intercept = 0.005,r_value = 0.889,p_value = 0.000,std_err = 0.005,coefficient of correlation = 0.790
+scatter: 0.014 dex 
+epoch: 1/50; train loss: 5.555e-01; test loss: 2.892e-01
+epoch: 11/50; train loss: 1.261e-02; test loss: 7.366e-03
+epoch: 21/50; train loss: 8.109e-03; test loss: 1.051e-02
+epoch: 31/50; train loss: 6.211e-03; test loss: 1.218e-02
+epoch: 41/50; train loss: 9.769e-03; test loss: 1.542e-02
+broken = True
+epoch: 1/50; train loss: 6.556e+00; test loss: -7.432e-01
+epoch: 11/50; train loss: -4.051e+00; test loss: -4.322e+00
+epoch: 21/50; train loss: -4.882e+00; test loss: -4.970e+00
+epoch: 31/50; train loss: -5.254e+00; test loss: -4.849e+00
+epoch: 41/50; train loss: -5.503e+00; test loss: -5.048e+00
+broken = True
+Parameter:  M500c
+slope = 0.543,intercept = 5.982,r_value = 0.376,p_value = 0.000,std_err = 0.013,coefficient of correlation = 0.141
+scatter: 0.475 dex 
+Parameter:  f_gas_R500c
+slope = 0.875,intercept = 0.005,r_value = 0.864,p_value = 0.000,std_err = 0.005,coefficient of correlation = 0.746
+scatter: 0.015 dex 
+epoch: 1/50; train loss: 4.153e-01; test loss: 4.291e-02
+epoch: 11/50; train loss: 1.332e-02; test loss: 1.372e-02
+epoch: 21/50; train loss: 7.645e-03; test loss: 5.697e-03
+epoch: 31/50; train loss: 5.923e-03; test loss: 6.991e-03
+epoch: 41/50; train loss: 4.858e-03; test loss: 2.076e-02
+broken = True
+epoch: 1/50; train loss: 1.258e+00; test loss: -5.430e-01
+epoch: 11/50; train loss: -3.452e+00; test loss: -3.754e+00
+epoch: 21/50; train loss: -4.368e+00; test loss: -3.908e+00
+epoch: 31/50; train loss: -5.071e+00; test loss: -4.967e+00
+epoch: 41/50; train loss: -5.416e+00; test loss: -4.230e+00
+broken = True
+Parameter:  M500c
+slope = 0.569,intercept = 5.643,r_value = 0.443,p_value = 0.000,std_err = 0.011,coefficient of correlation = 0.196
+scatter: 0.413 dex 
+Parameter:  f_gas_R500c
+slope = 0.882,intercept = 0.005,r_value = 0.800,p_value = 0.000,std_err = 0.006,coefficient of correlation = 0.641
+scatter: 0.019 dex 
+epoch: 1/50; train loss: 6.091e-01; test loss: 2.809e-01
+epoch: 11/50; train loss: 2.960e-02; test loss: 2.856e-02
+epoch: 21/50; train loss: 4.151e-02; test loss: 3.363e-02
+epoch: 31/50; train loss: 6.667e-03; test loss: 4.106e-02
+epoch: 41/50; train loss: 5.085e-03; test loss: 3.058e-02
+broken = True
+epoch: 1/50; train loss: -9.399e-01; test loss: -1.626e+00
+epoch: 11/50; train loss: -4.363e+00; test loss: -4.696e+00
+epoch: 21/50; train loss: -4.869e+00; test loss: -5.030e+00
+epoch: 31/50; train loss: -5.087e+00; test loss: -3.686e+00
+epoch: 41/50; train loss: -4.980e+00; test loss: -5.103e+00
+broken = True
+Parameter:  M500c
+slope = 0.895,intercept = 1.383,r_value = 0.988,p_value = 0.000,std_err = 0.001,coefficient of correlation = 0.975
+scatter: 0.059 dex 
+Parameter:  f_gas_R500c
+slope = 0.834,intercept = 0.010,r_value = 0.979,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.958
+scatter: 0.007 dex 
+same
+Best trial:
+	number: 76
+	params: {'dr': 0.03145402556233757, 'hidden': 3, 'lr': 0.00042808789973866753, 'wd': 0.020671037145645263}
+	values: [-5.976232940863923]
+---------------------------------------
+Parameter:  M500c
+slope = 1.070,intercept = -0.901,r_value = 0.990,p_value = 0.000,std_err = 0.002,coefficient of correlation = 0.979
+scatter: 0.057 dex 
+---------------------------------------
+Parameter:  f_gas_R500c
+slope = 0.934,intercept = 0.004,r_value = 0.988,p_value = 0.000,std_err = 0.001,coefficient of correlation = 0.977
+scatter: 0.005 dex 
+---------------------------------------
+CNN(
+  (conv01): Conv2d(8, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv02): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv03): Conv2d(6, 6, kernel_size=(2, 2), stride=(2, 2))
+  (Bat01): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat02): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat03): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv11): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv12): Conv2d(12, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv13): Conv2d(12, 12, kernel_size=(2, 2), stride=(2, 2))
+  (Bat11): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat12): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat13): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv21): Conv2d(12, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv22): Conv2d(24, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv23): Conv2d(24, 24, kernel_size=(2, 2), stride=(2, 2))
+  (Bat21): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat22): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat23): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv31): Conv2d(24, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv32): Conv2d(48, 48, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv33): Conv2d(48, 48, kernel_size=(2, 2), stride=(2, 2))
+  (Bat31): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat32): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat33): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv41): Conv2d(48, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv42): Conv2d(96, 96, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv43): Conv2d(96, 96, kernel_size=(2, 2), stride=(2, 2))
+  (Bat41): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat42): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat43): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv51): Conv2d(96, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv52): Conv2d(192, 192, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv53): Conv2d(192, 192, kernel_size=(2, 2), stride=(2, 2))
+  (Bat51): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat52): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat53): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv61): Conv2d(192, 384, kernel_size=(2, 2), stride=(1, 1))
+  (conv62): Conv2d(384, 384, kernel_size=(2, 2), stride=(1, 1))
+  (conv63): Conv2d(384, 384, kernel_size=(2, 2), stride=(1, 1))
+  (Bat61): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat62): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (Bat63): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (P0): AvgPool2d(kernel_size=2, stride=2, padding=0)
+  (FC1): Linear(in_features=384, out_features=192, bias=True)
+  (FC2): Linear(in_features=192, out_features=4, bias=True)
+  (dropout): Dropout(p=0.03145402556233757, inplace=False)
+  (ReLU): ReLU()
+  (LeakyReLU): LeakyReLU(negative_slope=0.2)
+  (tanh): Tanh()
+)
+--- 26566.291276931763 seconds ---

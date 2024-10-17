@@ -1,0 +1,151 @@
+======================================================================
+======================================================================
+=
+= A notes file for getting started with using the CAMELS CGM dataset
+= and training/testing the CNN used in Gluck et al. 2023.
+=
+= This will include file directories, and any other important notes.
+= Written by: Naomi Gluck | Yale University | 2023
+=
+= Updated 1/2024 to include TNG100-specific information.
+=
+======================================================================
+======================================================================
+
+Data Files: /gpfs/gibbs/pi/nagai/CAMELS_CGM/all_maps
+DO NOT CHANGE THIS PATH IN SCRIPTS!
+    - Params_....ascii files for each simulation 
+    - Maps_....npy files for combinations of: field, simulation, and limits
+
+Map files contain 6 columns, corresponding to each of the parameters. Note 
+that when called as a column (in the dataframe format), they are labeled as
+Column1, Column2, etc, but the order remains the same.
+
+0) Mhalo, 1) Mcgm, 2) fcool, 3) logT, 4) logZ, 5) fcgm
+
+============================ map making ==============================
+
+Simulation Directory (TNG100): /home/bo256/project/halos/TNG100/TNG100/
+                                  halo#.snap##.z0.010 
+   -> Contains hdf5 files
+
+Use copy of script /home/bo256/project/halos/make_TNG_multistack_v3.py
+with the hdf5 files above. Make sure that your outputs are to your own
+directory, and that you return the properties you want to infer!
+
+   -> Returns Maps......npy files
+
+Use the .npy files with a copy of /home/ng474/CMD_py/maps_wo_labels.py
+to create the visual maps.
+
+   -> Returns .png files 
+
+All you now need to run the CNN (once optimized for TNG100) is the 
+params file, found at: /home/bo256/Params_TNG100_z=0.000.ascii. Once you
+change the format from .ascii to a .txt file, then you can use the 
+"file conversion scripts" below to obtain .json files to use with the CNN.
+
+======================= file conversion scripts ======================
+
+1) txt_to_csv_v2.py
+2) csv_to_df.py
+3) csv_to_json.py   | you'll need this format for integrated gradients
+
+======================= CNN-related scripts ==========================
+
+In general, you need these scripts:
+
+1) architecture.py   | the CGM data was run using the hp3 architecture.
+2) utils.py          | create databases, weights, get best-fit values.
+3) data_halo.py      | to create dataset, store rotations, errors, etc.
+4) halo_train_CGM.py | for training your network (will take at least a day)
+5) halo_test_CGM.py  | for testing your network (should be relatively quick)
+
+======================= directories to make ===========================
+
+1) some_path/field_spec/losses_IllustrisTNG (and for SIMBA, Astrid)
+2) some_path/field_spec/models_IllustrisTNG (and for SIMBA, Astrid)
+
+    field_spec should be either:
+    - full_halo_XraySoft
+    - full_halo_HI
+    - full_halo_HI,XraySoft
+
+======================= How to run things =============================
+
+To train the network, since this takes quite a bit of time and I'm assuming
+you want to work on other things while you train, it is wise to submit a 
+batch-job script.
+
+Step 1: Make sure that you have all necessary files. You'll know pretty quickly
+        if you don't, as your job will fail within a few minutes.
+
+Step 2: Create a .sh file, with contents similar to:
+
+#!/bin/bash
+
+#SBATCH --job-name=halo_train_HI_TNG    # this is what appears in the queue
+#SBATCH --output=halo_train_TNG_HI.txt  # the output file name
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --gpus=1
+#SBATCH --partition=gpu
+#SBATCH --nodes=1
+#SBATCH --time=48:00:00   
+##SBATCH --mem=50G
+#SBATCH --constraint "v100"
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+python halo_train_CGM.py HI IllustrisTNG CV 0.00
+
+---- end of file
+
+      In the last line of the file, we follow the sys.argv command-line format
+      from halo_train_CGM.py: 
+     
+      python halo_train_CGM.py field simulation set redshift .obslimit
+
+          field: HI, XraySoft, HI_XraySoft
+          simulation: IllustrisTNG, SIMBA, Astrid
+          set: CV
+          redshift: 0.00
+          .obslimit is optional, depending on what you want to train on.
+
+Step 3: Run your .sh file with this command: sbatch your_file.sh
+
+Step 4: To check on your .sh file run: squeue --me
+
+To make this go a bit faster, you can submit the same .sh file multiple times,
+usually for 200 epochs, 4 times should be fine. You may want to create multiple 
+copies of this .sh file, so you can run different variations of fields,
+simulations, with/without observational limits, etc. 
+
+Be very careful with your file naming for the output file, as if you use the same
+name by mistake, the file will be rewritten and there's nothing you can do about 
+what was there before.
+
+========================= plotting scripts ============================
+
+1) maps_wo_labels.py  | to save the map image files (without labels as default)
+2) data_cuts.py       | this is added to scripts to reduce the # of points plotted
+                        based on mass value.
+3) accuracy.py        | added to plot scripts to print out statistics on each panel
+
+Based on plots in Gluck et al. 2023:
+4) CGM_plotting_fields_panel_2x3.py  | for the 2x3 panel plots
+5) CGM_plotting_fields_panel_1x3_sim.py | 1x3 panels by simulation for one field  
+6) CGM_plotting_fields_panel_1x3_cbs.py | 1x3 panels for Xray, HI, Xray+HI
+7) count_halos_v2.py | Figure 1
+8) count_Mhalo_v2.py | Figure A2
+9) integrated_gradients.py | for integrated gradients script (current version) 
+10) error_by_halotype.py | histogram for one simulation, panels by mass
+11) error_by_simtype.py  | histogram for all simulations, HI+Xray .obslimit
+
+========================================================================
+
+If something goes horribly wrong, email Tom Langford at Yale HPC.
+
+
+

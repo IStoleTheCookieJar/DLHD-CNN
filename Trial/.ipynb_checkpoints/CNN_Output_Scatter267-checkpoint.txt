@@ -1,0 +1,93 @@
+Is CUDA supported by this system? False
+Channel = 0.2-0.4_lem,Mean of channel = 6.227, std of channel = 323.321
+Range: -0.018 - 1682.406
+0.2-0.4_lem
+Channel = 0.4-0.6_lem,Mean of channel = 7.068, std of channel = 477.574
+Range: -0.014 - 1758.431
+0.4-0.6_lem
+Channel = 0.73-1.1_lem,Mean of channel = 24.740, std of channel = 3117.125
+Range: -0.008 - 2052.926
+0.73-1.1_lem
+Channel = 1.43-2.0_lem,Mean of channel = 1.452, std of channel = 80.334
+Range: -0.012 - 2132.062
+1.43-2.0_lem
+Channel = Fe_XVII,Mean of channel = 6.953, std of channel = 986.135
+Range: -0.007 - 1706.141
+Fe_XVII
+Channel = O_VII,Mean of channel = 5.100, std of channel = 420.518
+Range: -0.011 - 1415.058
+O_VII
+Channel = O_VIII,Mean of channel = 5.974, std of channel = 678.751
+Range: -0.008 - 1413.200
+O_VIII
+Channel = H1,Mean of channel = 19.038, std of channel = 0.267
+Range: -0.143 - 14.936
+H1
+['M500c', 'f_gas_R500c', 'Log_Z']
+[[ 1.3690e+01  7.0000e-02 -2.0640e+00]
+ [ 1.3690e+01  7.0000e-02 -2.0640e+00]
+ [ 1.3690e+01  7.0000e-02 -2.0640e+00]
+ ...
+ [ 1.1638e+01  8.0000e-03 -2.2130e+00]
+ [ 1.1638e+01  8.0000e-03 -2.2130e+00]
+ [ 1.1638e+01  8.0000e-03 -2.2130e+00]]
+Starting array =  [    0     1     2 ... 10695 10696 10697]
+Shuffled array =  [7037 6045  419 ... 5460 3063 9436]
+training split looks like 8558 galaxies 
+testing split looks like 2140 galaxies
+Training indeces =  [7037 6045  419 ... 3634 5810 9215] 
+Testing indeces =  [  982 10674 10627 ...  5460  3063  9436]
+Shape of train = (8558,)
+Shape of test = (2140,)
+Shape of Data  (8, 10698, 128, 128)
+10698
+10698
+2376_z
+8558
+342_y
+2140
+128
+torch.Size([8, 128, 128])
+128
+epoch: 1/50; train loss: 1.465e+00; test loss: 9.244e-02
+epoch: 11/50; train loss: 4.354e-02; test loss: 9.706e-02
+epoch: 21/50; train loss: 2.716e-02; test loss: 2.610e-01
+epoch: 31/50; train loss: 2.102e-02; test loss: 2.618e-01
+epoch: 41/50; train loss: 1.770e-02; test loss: 5.051e-02
+broken = True
+epoch: 1/50; train loss: nan; test loss: nan
+epoch: 11/50; train loss: nan; test loss: nan
+epoch: 21/50; train loss: nan; test loss: nan
+epoch: 31/50; train loss: nan; test loss: nan
+epoch: 41/50; train loss: nan; test loss: nan
+broken = False
+Parameter:  M500c
+slope = nan,intercept = nan,r_value = nan,p_value = nan,std_err = nan,coefficient of correlation = nan
+scatter: nan dex 
+Parameter:  f_gas_R500c
+slope = nan,intercept = nan,r_value = nan,p_value = nan,std_err = nan,coefficient of correlation = nan
+scatter: nan dex 
+Parameter:  Log_Z
+slope = nan,intercept = nan,r_value = nan,p_value = nan,std_err = nan,coefficient of correlation = nan
+scatter: nan dex 
+epoch: 1/50; train loss: 1.270e+00; test loss: 1.570e-01
+epoch: 11/50; train loss: 1.416e-01; test loss: 7.772e-02
+epoch: 21/50; train loss: 1.011e-01; test loss: 6.778e-02
+epoch: 31/50; train loss: 7.830e-02; test loss: 6.099e-02
+epoch: 41/50; train loss: 5.962e-02; test loss: 1.142e-01
+broken = True
+epoch: 1/50; train loss: -1.665e+00; test loss: -3.416e+00
+epoch: 11/50; train loss: -4.608e+00; test loss: 2.852e+00
+epoch: 21/50; train loss: -5.402e+00; test loss: 1.587e+00
+epoch: 31/50; train loss: -5.439e+00; test loss: 3.858e+00
+epoch: 41/50; train loss: -5.906e+00; test loss: 1.004e+01
+broken = True
+Parameter:  M500c
+slope = 0.330,intercept = 8.274,r_value = 0.462,p_value = 0.000,std_err = 0.006,coefficient of correlation = 0.214
+scatter: 0.363 dex 
+Parameter:  f_gas_R500c
+slope = 0.281,intercept = 0.035,r_value = 0.478,p_value = 0.000,std_err = 0.005,coefficient of correlation = 0.228
+scatter: 0.033 dex 
+Parameter:  Log_Z
+slope = 0.025,intercept = -2.125,r_value = 0.043,p_value = 0.000,std_err = 0.006,coefficient of correlation = 0.002
+scatter: 0.191 dex 
