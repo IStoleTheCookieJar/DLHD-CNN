@@ -1,0 +1,76 @@
+200 3_18_2024 1_channel 100 H1
+201 3_18_2024 2_channel 100 H1 H1_vel
+202 3_18_2024 3_channel 100 H1 H1_vel H1_disp
+203 3_18_2024 1_channel 100 0.2-0.4
+204 3_18_2024 2_channel 100 0.2-0.4 H1
+205 3_18_2024 4_channel 100 0.2-0.4 H1 H1_vel H1_disp
+206 3_18_2024 1_channel 100 0.4-0.6
+207 3_18_2024 2_channel 100 0.4-0.6 H1
+208 3_18_2024 4_channel 100 0.4-0.6 H1 H1_vel H1_disp
+209 3_18_2024 1_channel 100 0.73-1.1
+210 3_18_2024 2_channel 100 0.73-1.1 H1
+211 3_18_2024 4_channel 100 0.73-1.1 H1 H1_vel H1_disp
+212 3_18_2024 1_channel 100 1.43-2.0
+213 3_18_2024 2_channel 100 1.43-2.0 H1
+214 3_18_2024 4_channel 100 1.43-2.0 H1 H1_vel H1_disp
+215 3_18_2024 1_channel 100 Fe_XVII
+216 3_18_2024 2_channel 100 Fe_XVII H1
+217 3_18_2024 4_channel 100 Fe_XVII H1 H1_vel H1_disp
+218 3_18_2024 1_channel 100 O_VII
+219 3_18_2024 2_channel 100 O_VII H1
+220 3_18_2024 4_channel 100 O_VII H1 H1_vel H1_disp
+221 3_18_2024 1_channel 100 O_VIII
+222 3_18_2024 2_channel 100 O_VIII H1
+223 3_18_2024 4_channel 100 O_VIII H1 H1_vel H1_disp
+
+224 5_14_2024 2_channel 100 0.2-0.4 O_VII
+225 5_14_2024 2_channel 100 0.2-0.4 0.73-1.1
+226 5_14_2024 2_channel 100 0.73-1.1 O_VII
+227 5_14_2024 3_channel 100 0.2-0.4 0.73-1.1 O_VII
+228 5_14_2024 3_channel 100 H1 0.2-0.4 O_VII
+229 5_14_2024 3_channel 100 H1 0.2-0.4 0.73-1.1
+230 5_14_2024 3_channel 100 H1 0.73-1.1 O_VII
+231 5_14_2024 4_channel 100 H1 0.2-0.4 0.73-1.1 O_VII
+232 5_14_2024 5_channel 100 H1 H1_vel H1_disp 0.2-0.4 O_VII
+233 5_14_2024 5_channel 100 H1 H1_vel H1_disp 0.2-0.4 0.73-1.1
+234 5_14_2024 5_channel 100 H1 H1_vel H1_disp 0.73-1.1 O_VII
+235 5_14_2024 6_channel 100 H1 H1_vel H1_disp 0.2-0.4 0.73-1.1 O_VII
+236 5_14_2024 4_channel 100 0.2-0.4 0.4-0.6 0.73-1.1 1.43-2.0
+237 5_14_2024 3_channel 100 Fe_XVII O_VII O_VIII
+238 5_14_2024 5_channel 100 H1 0.2-0.4 0.4-0.6 0.73-1.1 1.43-2.0
+239 5_14_2024 4_channel 100 H1 Fe_XVII O_VII O_VIII
+240 5_14_2024 7_channel 100 H1 H1_vel H1_disp 0.2-0.4 0.4-0.6 0.73-1.1 1.43-2.0
+241 5_14_2024 6_channel 100 H1 H1_vel H1_disp Fe_XVII O_VII O_VIII
+
+242 6_3_2024 4_channel 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd
+243 6_3_2024 4_channel 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem
+244 6_3_2024 7_channel 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd Fe_XVII O_VII O_VIII
+245 6_3_2024 7_channel 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII
+246 6_3_2024 7_channel 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd H1 H1_vel H1_disp
+247 6_3_2024 7_channel 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem H1 H1_vel H1_disp
+248 6_3_2024 10_channel 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd Fe_XVII O_VII O_VIII H1 H1_vel H1_disp
+249 6_3_2024 10_channel 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII H1 H1_vel H1_disp
+
+250 6_30_2024 1 300 H1 1 M500c
+251 6_30_2024 1 300 H1 1 f_gas_R500c
+252 6_30_2024 1 300 H1 1 Log_Z
+253 7_8_2024 1 300 H1 3 M500c f_gas_R500c Log_Z
+
+254 7_30_2024 4 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd 2 M500c f_gas_R500c
+255 7_30_2024 4 100 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd 3 M500c f_gas_R500c f_cool_R500c
+256 7_30_2024 7 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII 2 M500c f_gas_R500c
+257 7_30_2024 7 100 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII 3 M500c f_gas_R500c f_cool_R500c
+258 7_30_2024 1 100 H1 3 M500c f_gas_R500c f_cool_R500c
+259 7_30_2024 3 100 H1 H1_vel H1_disp 3 M500c f_gas_R500c f_cool_R500c
+260 7_30_2024 7 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd H1 H1_vel H1_disp 2 M500c f_gas_R500c
+261 7_30_2024 7 100 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd H1 H1_vel H1_disp 3 M500c f_gas_R500c f_cool_R500c
+262 7_30_2024 10 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII H1 H1_vel H1_disp 2 M500c f_gas_R500c
+263 7_30_2024 10 100 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII H1 H1_vel H1_disp 3 M500c f_gas_R500c f_cool_R500c
+264 7_30_2024 5 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd H1 2 M500c f_gas_R500c
+265 7_30_2024 5 100 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd H1 3 M500c f_gas_R500c f_cool_R500c
+266 7_30_2024 8 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII H1 2 M500c f_gas_R500c
+267 7_30_2024 8 100 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII H1 3 M500c f_gas_R500c f_cool_R500c
+268 11_7_2024 4 100 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd 2 Log_Z_100 OFe_100
+269 11_7_2024 7 100 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII 2 Log_Z_100 OFe_100
+270 9_18_2024 4 300 0.2-0.4_ccd 0.4-0.6_ccd 0.7-1.1_ccd 1.4-2.0_ccd 2 Log_Z OFe
+271 9_18_2024 7 300 0.2-0.4_lem 0.4-0.6_lem 0.73-1.1_lem 1.43-2.0_lem Fe_XVII O_VII O_VIII 2 Log_Z OFe
